@@ -1,4 +1,4 @@
-import { getPosts } from '../apolloclient'
+import { getPosts } from '../client'
 import Head from 'next/head'
 import Image from 'next/image'
 
