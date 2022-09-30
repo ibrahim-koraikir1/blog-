@@ -8,6 +8,7 @@ import blog from '../public/asset/blog.jpg'
 export default function Header() {
     const [search , setserach]=  useState(false)
     const [active , setactive]=  useState(false)
+    const [down, setdown]=  useState(false)
 
    const handelsub = () =>{
     console.log(22)
@@ -35,11 +36,13 @@ export default function Header() {
           </li>
 
           <li className="navbar-item">
-            <a href="#" className="navbar-link hover:underline" data-nav-link>Membership</a>
+            <a href="#" className="navbar-link hover:underline" 
+            >{down ?  "categories ⬇️": "categories ⬆️"}</a>
           </li>
 
         </ul>
       </nav>
+       
 
       <div className="wrapper">
 

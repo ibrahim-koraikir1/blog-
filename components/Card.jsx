@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Card({el}) {
   return (
-    <Link href={el.slug}>
+    <Link href={`/post/${el.slug}`}>
     <li className="scrollbar-item">
     <div className="blog-card">
 
@@ -31,17 +31,13 @@ export default function Card({el}) {
 
         <ul className="card-meta-list">
 
-          <li>
-            <a href="#" className="card-tag">Design</a>
-          </li>
-
-          <li>
-            <a href="#" className="card-tag">Idea</a>
-          </li>
-
-          <li>
-            <a href="#" className="card-tag">Review</a>
-          </li>
+        {el.tags.map(tag => {
+                        return(
+                         <li>
+                          <a href="#" className="card-tag">{tag}</a>
+                        </li>
+                        )
+                       })}
 
         </ul>
 

@@ -195,6 +195,9 @@
     right: 0;
     bottom: 0;
   }
+  .textwriter{
+    background-color: #F3F1F3;
+  }
   
   .btn {
     background-color: var(--eerie-black);

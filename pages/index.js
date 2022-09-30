@@ -1,19 +1,18 @@
-import { getPosts } from '../client'
+import { getPosts, getRecentPosts } from '../client'
 import Head from 'next/head'
 import Image from 'next/image'
 
 
 
 
-import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Cards from '../components/Cards'
 import Rexent from '../components/Rexent'
 import Recommended from '../components/Recommended'
 import Newsletter from '../components/Newsletter'
-import Footer from '../components/Footer'
 
-export default function Home({ posts }) {
+
+export default function Home({ posts , RecentPosts  }) {
   
   return (
     <div >
@@ -24,19 +23,19 @@ export default function Home({ posts }) {
       </Head>
 
 
-      <Header/>
+      
 
       <main>
         <article>
           <Hero/>
           <Cards post={posts}/>
-          <Rexent post={posts}/>
+          <Rexent post={RecentPosts }/>
           <Recommended post={posts}/>
           <Newsletter/>
         </article>
       </main>
 
-   <Footer/>
+   
 
     </div>
   )
@@ -45,7 +44,8 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
+  const RecentPosts = (await getRecentPosts()) || [];
   return {
-    props: { posts },
+    props: { posts , RecentPosts  },
   };
 }

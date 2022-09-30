@@ -14,7 +14,7 @@ export default function Hero() {
 
       <h1 className="h1 hero-title">
       <strong className="strong"> 👋Hey,there.</strong> 
-        just blog about web dev  and . {text}
+        just blog about web development <div>and <samp className='textwriter'>  {text}</samp></div>
       </h1>
 
       <div className="wrapper">
