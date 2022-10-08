@@ -9,7 +9,7 @@ export default function Header() {
     const [search , setserach]=  useState(false)
     const [active , setactive]=  useState(false)
     const [down, setdown]=  useState(false)
-
+    
    const handelsub = () =>{
     console.log(22)
    }

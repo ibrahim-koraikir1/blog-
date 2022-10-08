@@ -259,6 +259,35 @@
     min-width: 70%;
     scroll-snap-align: center;
   }
+
+
+  .details{
+    margin: 2rem 0 ;
+    padding: 0 1rem ;
+    background-color: blueviolet;
+   }
+
+
+  .title-details{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .auhtor-details {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
   
   .blog-card .card-banner {
     position: relative;
@@ -882,6 +911,13 @@
     display: flex;
     gap: 8px;
   }
+
+  /**
+   * deatils
+   */
+
+  
+
 
 
 

@@ -79,10 +79,22 @@ export const getPostDetails = async (slug) => {
     query GetPostDetails($slug : String!) {
       post(where: {slug: $slug}) {
         title
-        excerpt
-        
-        createdAt
-        slug
+    excerpt
+    createdAt
+    slug
+    date
+    author {
+      name
+      picture {
+        url
+      }
+    }
+    content {
+      markdown
+    }
+    coverImage {
+      url
+    }
        
        
       }

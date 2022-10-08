@@ -58,3 +58,7 @@ export default function Card({el}) {
   </Link>
   )
 }
+
+
+
+
