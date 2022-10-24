@@ -172,6 +172,7 @@
   
   .h5 { font-size: var(--fs-6); }
   
+   
   .newsletter-form {
     position: relative;
     max-width: 400px;
@@ -537,8 +538,10 @@
 
 #FOOTER
 \*-----------------------------------*/
-
-.footer { padding-block: 40px 20px; }
+ .footer {
+  padding: 3rem ;
+ }
+.footer { padding: 40px 20px; margin-block: 2rem; }
 
 .section.footer-top { border-block-end: none; }
 
@@ -1056,4 +1059,24 @@
     padding-inline-end: 100px;
   }
 
+}
+
+.drop.active{
+visibility: visible;
+}
+.drop{
+  visibility: hidden;
+  background-color: #F3F1F3;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.drop a {
+ cursor: pointer;
+ font-size: var(--ff-inter);
+ padding: 1rem;
+}
+
+.postin{
+  position: relative;
 }

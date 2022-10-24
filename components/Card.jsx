@@ -18,10 +18,12 @@ export default function Card({el}) {
         
 
           <li className="avatar-item">
-            <a href="#" className="avatar img-holder" >
+            
+            <a  href="#" className="avatar img-holder" >
               <img src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
                 className="img-cover" />
             </a>
+          
           </li>
 
         </ul>
@@ -34,7 +36,7 @@ export default function Card({el}) {
         {el.tags.map(tag => {
                         return(
                          <li>
-                          <a href="#" className="card-tag">{tag}</a>
+                        <a  href="#" className="card-tag">{tag}</a>
                         </li>
                         )
                        })}

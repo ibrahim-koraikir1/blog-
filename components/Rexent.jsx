@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Rexent({post}) {
    
   return (
-    <section className="section recent" aria-label="recent post">
+    <section className="section max-w recent" aria-label="recent post">
         <div className="container">
 
           <div className="title-wrapper">
@@ -19,7 +20,7 @@ export default function Rexent({post}) {
           {post.map((el , i) => {
             return (
                 
-
+              <Link href={`/post/${el.slug}`}> 
                 <li>
                   <div className="blog-card">
     
@@ -42,7 +43,7 @@ export default function Rexent({post}) {
                     </figure>
     
                     <div className="card-content">
-    
+                   
                       <ul className="card-meta-list">
     
                         
@@ -72,7 +73,7 @@ export default function Rexent({post}) {
                   </div>
                 </li>
     
-             
+                </Link>
     
     
             

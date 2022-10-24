@@ -25,7 +25,7 @@ export default function Home({ posts , RecentPosts  }) {
 
       
 
-      <main>
+      <main >
         <article>
           <Hero/>
           <Cards post={posts}/>

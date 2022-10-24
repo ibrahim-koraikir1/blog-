@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Recommended({post}) {
   return (
-    <section className="section recommended" aria-label="recommended post">
+    <section className="section max-w recommended" aria-label="recommended post">
         <div className="container">
 
           <p className="section-subtitle">
@@ -13,6 +14,7 @@ export default function Recommended({post}) {
 
            {post.posts.map((el , i ) => {
             return(
+              <Link href={`/post/${el.slug}`}>
                 <li>
                 <div className="blog-card">
   
@@ -35,6 +37,7 @@ export default function Recommended({post}) {
   
                 </div>
               </li>
+              </Link>
             )
            })}
 

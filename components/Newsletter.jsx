@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Newsletter() {
   return (
-    <section className="section newsletter">
+    <section className="section max-w newsletter">
 
         <h2 className="h2 section-title">
           Subscribe to <strong className="strong">new posts</strong>

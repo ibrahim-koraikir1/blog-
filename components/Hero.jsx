@@ -9,7 +9,7 @@ export default function Hero() {
     loop:  {}
   })
   return (
-    <section className="section hero" aria-label="home">
+    <section className="section max-w hero" aria-label="home">
     <div className="container">
 
       <h1 className="h1 hero-title">

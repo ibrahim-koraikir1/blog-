@@ -90,7 +90,7 @@ export const getPostDetails = async (slug) => {
       }
     }
     content {
-      markdown
+      html
     }
     coverImage {
       url

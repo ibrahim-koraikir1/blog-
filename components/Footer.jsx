@@ -1,102 +1,103 @@
 import React from 'react'
+import logo from '../public/asset/logo.jpg'
 
 export default function Footer() {
   return (
-    <footer class="footer">
-    <div class="container">
+    <footer className="footer">
+    <div className="container">
 
-      <div class="footer-top section">
+      <div className="footer-top section">
 
-        <div class="footer-brand">
+        <div className="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="129" height="40" alt="Blogy logo" />
+          <a href="#" className="logo">
+            <img src={logo} width="129" height="40" alt=" logo" />
           </a>
 
-          <p class="footer-text">
+          <p className="footer-text">
             A minimal, functional theme for running a paid-membership publication on Ghost.
           </p>
 
         </div>
 
-        <ul class="footer-list">
+        <ul className="footer-list">
 
           <li>
-            <p class="h5">Social</p>
+            <p className="h5">Social</p>
           </li>
 
-          <li class="footer-list-item">
+          <li className="footer-list-item">
             <ion-icon name="logo-facebook"></ion-icon>
 
-            <a href="#" class="footer-link hover:underline">Facebook</a>
+            <a href="#" className="footer-link hover:underline">Facebook</a>
           </li>
 
-          <li class="footer-list-item">
+          <li className="footer-list-item">
             <ion-icon name="logo-twitter"></ion-icon>
 
-            <a href="#" class="footer-link hover:underline">Twitter</a>
+            <a href="#" className="footer-link hover:underline">Twitter</a>
           </li>
 
-          <li class="footer-list-item">
+          <li className="footer-list-item">
             <ion-icon name="logo-pinterest"></ion-icon>
 
-            <a href="#" class="footer-link hover:underline">Pinterest</a>
+            <a href="#" className="footer-link hover:underline">Pinterest</a>
           </li>
 
-          <li class="footer-list-item">
+          <li className="footer-list-item">
             <ion-icon name="logo-vimeo"></ion-icon>
 
-            <a href="#" class="footer-link hover:underline">Vimeo</a>
+            <a href="#" className="footer-link hover:underline">Vimeo</a>
           </li>
 
         </ul>
 
-        <ul class="footer-list">
+        <ul className="footer-list">
 
           <li>
-            <p class="h5">About</p>
+            <p className="h5">About</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">Style Guide</a>
+            <a href="#" className="footer-link hover:underline">Style Guide</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">Features</a>
+            <a href="#" className="footer-link hover:underline">Features</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">Contact</a>
+            <a href="#" className="footer-link hover:underline">Contact</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">404</a>
+            <a href="#" className="footer-link hover:underline">404</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">Privacy Policy</a>
+            <a href="#" className="footer-link hover:underline">Privacy Policy</a>
           </li>
 
         </ul>
 
-        <ul class="footer-list">
+        <ul className="footer-list">
 
           <li>
-            <p class="h5">Features</p>
+            <p className="h5">Features</p>
           </li>
 
          
 
           <li>
-            <a href="#" class="footer-link hover:underline">Blog & News</a>
+            <a href="#" className="footer-link hover:underline">Blog & News</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">Features</a>
+            <a href="#" className="footer-link hover:underline">Features</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link hover:underline">FAQ Question</a>
+            <a href="#" className="footer-link hover:underline">FAQ Question</a>
           </li>
 
          
@@ -106,10 +107,10 @@ export default function Footer() {
 
       </div>
 
-      <div class="section footer-bottom">
+      <div className="section footer-bottom">
 
-        <p class="copyright">
-          &copy; blog 2022. Published by <a href="#" class="copyright-link hover:underline">ibrahim koraikir</a>.
+        <p className="copyright">
+          &copy; blog 2022. Published by <a href="#" className="copyright-link hover:underline">ibrahim koraikir</a>.
         </p>
 
       </div>

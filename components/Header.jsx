@@ -1,7 +1,7 @@
 import {AiOutlineCloseCircle, AiOutlineSearch} from "react-icons/ai"
 import Image from 'next/image'
 import { useState } from 'react'
-import blog from '../public/asset/blog.jpg'
+import logo from '../public/asset/logo.jpg'
 
 
 
@@ -10,18 +10,18 @@ export default function Header() {
     const [active , setactive]=  useState(false)
     const [down, setdown]=  useState(false)
     
-   const handelsub = () =>{
-    console.log(22)
+   const heandelclick= () =>{
+     setdown(!down)
    }
 
 
   return (
     <>
-    <header className="header section" data-header>
+    <header className="header max-w section" data-header>
     <div className="container">
 
       <a href="#" className="logo">
-        <Image src={blog} width={40} height={40} alt="Blogy logo" />
+        <Image src={logo} width={40} height={40} alt="Blogy logo" />
       </a>
 
       <nav className={active ? "navbar active" : "navbar"} >
@@ -35,14 +35,20 @@ export default function Header() {
             <a href="#" className="navbar-link hover:underline" data-nav-link>Recent Post</a>
           </li>
 
-          <li className="navbar-item">
+          <li className="navbar-item postin" onClick={heandelclick}>
             <a href="#" className="navbar-link hover:underline" 
             >{down ?  "categories ⬇️": "categories ⬆️"}</a>
+              <div className={ down ? 'active drop ' : 'drop'}>
+              <a> react js </a>
+              <a> next js </a>
+              <a> javascript </a>
+             </div>
           </li>
 
-        </ul>
+        </ul> 
+        
       </nav>
-       
+      
 
       <div className="wrapper">
 

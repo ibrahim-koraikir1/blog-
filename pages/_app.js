@@ -6,11 +6,11 @@ import '../styles.css'
 
 
 function MyApp({ Component, pageProps }) {
-  return <>
+  return <div className='max-contener'>
     <Header/>
     <Component {...pageProps} />
     <Footer/>
-    </>
+    </div>
  
 }
 
