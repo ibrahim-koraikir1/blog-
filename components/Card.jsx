@@ -20,7 +20,7 @@ export default function Card({el}) {
           <li className="avatar-item">
             
             <a  href="#" className="avatar img-holder" >
-              <img src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
+               <img src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
                 className="img-cover" />
             </a>
           

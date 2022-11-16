@@ -44,6 +44,7 @@ export default function Footer() {
             <a href="#" className="footer-link hover:underline">Pinterest</a>
           </li>
 
+
           <li className="footer-list-item">
             <ion-icon name="logo-vimeo"></ion-icon>
 

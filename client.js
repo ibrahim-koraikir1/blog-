@@ -27,14 +27,17 @@ export const getPosts = async () => {
       coverImage {
         url
       }
-      author {
+      author{
         name
-        picture {
+        picture{
           url
         }
       }
       content {
+        raw
+        html
         markdown
+        text
       }
     }
   }
@@ -90,7 +93,7 @@ export const getPostDetails = async (slug) => {
       }
     }
     content {
-      html
+      raw
     }
     coverImage {
       url

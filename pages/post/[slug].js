@@ -1,10 +1,12 @@
 import React from 'react'
 import { getPostDetails, getPosts, slugs } from '../../client';
+import {RichText} from '@graphcms/rich-text-react-renderer'
 
 export default function PostDetails({post}) {
-    console.log('helloooooo')
-    console.log(post)
+ 
+  
   return (
+    <div>
     <div className='details section'>
       <div className='title-details'>
         {post.title}
@@ -22,14 +24,23 @@ export default function PostDetails({post}) {
 
         <span> Written By</span>
           
-          <span>{post. author.name}</span>
+          <span>{post.author.name}</span>
          
         </p>
       </div>
-      <div>
-        {post.content.markdown}
+      <div className='post'>
+       
+         <RichText content={post.content.raw.children} />
+
       </div>
+      
+      <div className='share'>
+            
+      </div>
+
     </div>
+    </div>
+    
   )
 }
 
