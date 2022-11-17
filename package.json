@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-multi-carousel": "^2.6.5",
+    "react-share": "^4.4.1",
     "react-simple-typewriter": "^4.0.2",
     "sass": "^1.42.1",
     "style-loader": "^3.3.1",

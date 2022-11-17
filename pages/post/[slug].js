@@ -1,13 +1,23 @@
 import React from 'react'
 import { getPostDetails, getPosts, slugs } from '../../client';
 import {RichText} from '@graphcms/rich-text-react-renderer'
-
+import { FacebookShareButton ,
+  EmailShareButton ,
+  LinkedinShareButton ,
+  TwitterShareButton,
+  TwitterIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  EmailIcon
+} from 'react-share'
 export default function PostDetails({post}) {
  
   
   return (
-    <div>
+    <div className=''>
     <div className='details section'>
+
+     
       <div className='title-details'>
         {post.title}
       </div>
@@ -31,14 +41,26 @@ export default function PostDetails({post}) {
       <div className='post'>
        
          <RichText content={post.content.raw.children} />
-
+        
       </div>
       
-      <div className='share'>
-            
+      
+       <div className='share'>
+        < FacebookShareButton url={"cool"}>
+        <FacebookIcon/>
+        </FacebookShareButton>
+        <EmailShareButton url={"cool"}>
+          <EmailIcon/>
+        </EmailShareButton>
+        <LinkedinShareButton url={"cool"}>
+          <LinkedinIcon/>
+        </LinkedinShareButton>
+        <TwitterShareButton url={"cool"}>
+          <TwitterIcon/>
+        </TwitterShareButton>
       </div>
-
     </div>
+    
     </div>
     
   )

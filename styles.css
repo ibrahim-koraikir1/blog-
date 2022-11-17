@@ -285,6 +285,14 @@
     padding: 2rem 4rem;
    
   }
+  .share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: sticky;
+  }
+  
 
 
 

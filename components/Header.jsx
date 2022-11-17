@@ -1,5 +1,6 @@
 import {AiOutlineCloseCircle, AiOutlineSearch} from "react-icons/ai"
 import Image from 'next/image'
+import Link from "next/link"
 import { useState } from 'react'
 import logo from '../public/asset/logo.jpg'
 
@@ -20,15 +21,16 @@ export default function Header() {
     <header className="header max-w section" data-header>
     <div className="container">
 
-      <a href="#" className="logo">
+
+      <Link href="/">
         <Image src={logo} width={40} height={40} alt="Blogy logo" />
-      </a>
+        </Link>
 
       <nav className={active ? "navbar active" : "navbar"} >
         <ul className="navbar-list">
 
           <li className="navbar-item">
-            <a href="#" className="navbar-link hover:underline" data-nav-link>Home</a>
+         <a  className="navbar-link hover:underline" data-nav-link>Home</a>
           </li>
 
           <li className="navbar-item">
