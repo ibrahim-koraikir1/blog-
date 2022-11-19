@@ -23,7 +23,7 @@ export default function Header() {
 
 
       <Link href="/">
-        <Image src={logo} width={40} height={40} alt="Blogy logo" />
+        <Image src={logo} width={40} height={40} alt="Blogy logo"  className="blog-logo"/>
         </Link>
 
       <nav className={active ? "navbar active" : "navbar"} >
@@ -66,7 +66,7 @@ export default function Header() {
           <span className="span three"></span>
         </button>
 
-        <a href="#" className="btn">Join</a>
+      
 
       </div>
 
@@ -91,3 +91,6 @@ export default function Header() {
   </>
   )
 }
+
+
+
