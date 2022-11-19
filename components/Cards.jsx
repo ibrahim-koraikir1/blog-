@@ -15,7 +15,7 @@ export default function Cards({post}) {
 
 
         {post.posts.map((el , i) =>{
-            return (<Card el={el} />)
+            return (<Card el={el} key={i} />)
         })}
 
        

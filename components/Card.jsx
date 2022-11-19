@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Card({el}) {
-  return (
+export default function Card({el , key}) {
+  return ( 
+    <div key={key}>
     <Link href={`/post/${el.slug}`}>
     <li className="scrollbar-item">
     <div className="blog-card">
@@ -33,9 +34,9 @@ export default function Card({el}) {
 
         <ul className="card-meta-list">
 
-        {el.tags.map(tag => {
+        {el.tags.map((tag , i) => {
                         return(
-                         <li>
+                         <li key={i}>
                         <a  href="#" className="card-tag">{tag}</a>
                         </li>
                         )
@@ -58,6 +59,7 @@ export default function Card({el}) {
     </div>
   </li>
   </Link>
+  </div>
   )
 }
 

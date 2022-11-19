@@ -19,7 +19,7 @@ export default function Rexent({post}) {
           <ul className="grid-list scrool">
           {post.map((el , i) => {
             return (
-                
+              <div key={i}>
               <Link href={`/post/${el.slug}`}> 
                 <li>
                   <div className="blog-card">
@@ -48,9 +48,9 @@ export default function Rexent({post}) {
     
                         
     
-                       {el.tags.map(tag => {
+                       {el.tags.map((tag ,i) => {
                         return(
-                         <li>
+                         <li key={i}>
                           <a href="#" className="card-tag">{tag}</a>
                         </li>
                         )
@@ -74,7 +74,7 @@ export default function Rexent({post}) {
                 </li>
     
                 </Link>
-    
+                </div>
     
             
             )

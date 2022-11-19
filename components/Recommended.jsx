@@ -14,7 +14,8 @@ export default function Recommended({post}) {
 
            {post.posts.map((el , i ) => {
             return(
-              <Link href={`/post/${el.slug}`}>
+              <div key={i}>
+              <Link href={`/post/${el.slug}`} >
                 <li>
                 <div className="blog-card">
   
@@ -38,6 +39,7 @@ export default function Recommended({post}) {
                 </div>
               </li>
               </Link>
+              </div>
             )
            })}
 
