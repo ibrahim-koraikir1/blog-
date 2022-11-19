@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -20,8 +21,8 @@ export default function Recommended({post}) {
                 <div className="blog-card">
   
                   <figure className="card-banner img-holder" style={{width: 200 ,height: 260}}>
-                    <img src={el.coverImage.url} width="300" height="360" loading="lazy"
-                      alt="done" className="img-cover" />
+                    <Image src={el.coverImage.url} width="300" height="360" loading="lazy"
+                      alt="done" className="img-cover" layout='fill' />
   
                     
                   </figure>

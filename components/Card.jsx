@@ -4,15 +4,15 @@ import React from 'react'
 
 export default function Card({el , key}) {
   return ( 
-    <div key={key}>
+    
     <Link href={`/post/${el.slug}`}>
     <li className="scrollbar-item">
     <div className="blog-card">
 
       <figure className="card-banner img-holder" >
-        <img src={el.coverImage.url} 
+        <Image src={el.coverImage.url} 
 
-          alt="itself" className="img-cover" />
+          alt="itself" className="img-cover"  layout='fill'/>
 
         <ul className="avatar-list absolute">
 
@@ -21,7 +21,7 @@ export default function Card({el , key}) {
           <li className="avatar-item">
             
             <a  href="#" className="avatar img-holder" >
-               <img src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
+               <Image src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
                 className="img-cover" />
             </a>
           
@@ -59,7 +59,7 @@ export default function Card({el , key}) {
     </div>
   </li>
   </Link>
-  </div>
+ 
   )
 }
 

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -25,7 +26,7 @@ export default function Rexent({post}) {
                   <div className="blog-card">
     
                     <figure className="card-banner img-holder" >
-                      <img src={el.coverImage.url} width="550" height="660" loading="lazy"
+                      <Image src={el.coverImage.url}  layout='fill'  width="550" height="660" loading="lazy"
                         alt="Creating is a privilege but it’s also a gift" className="img-cover" />
     
                       <ul className="avatar-list absolute">
@@ -34,7 +35,7 @@ export default function Rexent({post}) {
     
                         <li className="avatar-item">
                           <a href="#" className="avatar img-holder" >
-                            <img src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
+                            <Image src={el.author.picture.url} layout='fill' width="100" height="100" loading="lazy" alt="Author"
                               className="img-cover" />
                           </a>
                         </li>
