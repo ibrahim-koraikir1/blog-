@@ -2,10 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Card({el , key}) {
+export default function Card({el }) {
   return ( 
     
-    <Link href={`/post/${el.slug}`}>
+    <Link href={`/post/${el.slug}`} >
     <li className="scrollbar-item">
     <div className="blog-card">
 
