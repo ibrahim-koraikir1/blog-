@@ -208,7 +208,7 @@
     
     background-color: var(--light-gray-1);
     overflow: hidden;
-    aspect-ratio: 1 / 1;
+    
     
 
   }
@@ -685,7 +685,7 @@
   .recommended .grid-list,
   .footer-top { grid-template-columns: repeat(3, 1fr); }
 
-  .footer-brand { grid-column: 1 / 4; }
+  
 
   .footer-text {
     max-width: 400px;
@@ -785,7 +785,7 @@
 
   .footer-top { grid-template-columns: repeat(4, 1fr); }
 
-  .footer-brand { grid-column: 1 / 5; }
+  
 
   .footer-link { --fs-7: 1.7rem; }
 
