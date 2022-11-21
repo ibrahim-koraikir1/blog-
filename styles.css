@@ -1,9 +1,7 @@
 
 :root {
 
-    /**
-     * colors
-     */
+  
   
     --eerie-black_80: hsla(225, 9%, 9%, 0.8);
     --eerie-black_60: hsla(225, 9%, 9%, 0.6);
@@ -16,9 +14,7 @@
     --white_20: hsla(0, 0%, 100%, 0.2);
     --white: hsl(0, 0%, 100%);
   
-    /**
-     * typography
-     */
+    
   
     --ff-inter: 'Inter', sans-serif;
   
@@ -36,23 +32,16 @@
     --fw-500: 500;
     --fw-300: 300;
   
-    /**
-     * spacing
-     */
   
     --section-padding: 50px;
   
-    /**
-     * radius
-     */
+   
   
     --radius-16: 16px;
     --radius-pill: 200px;
     --radius-circle: 50%;
   
-    /**
-     * transition
-     */
+   
   
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
@@ -66,9 +55,7 @@
   
   
   
-  /*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
+ 
   
   *,
   *::before,
@@ -568,8 +555,8 @@
 .recommended .blog-card { margin-block-end: 5px; }
 
 
-#FOOTER
-\*-----------------------------------*/
+
+
  .footer {
   padding: 3rem ;
  }
@@ -637,15 +624,11 @@
 
 @media (min-width: 575px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  
 
   :root {
 
-    /**
-     * typography
-     */
+   
 
     --fs-1: 6rem;
     --fs-2: 4.8rem;
@@ -654,9 +637,7 @@
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  
 
   .section { margin-inline: 30px; }
 
@@ -688,26 +669,19 @@
 
 
 
-  /**
-   * HEADER
-   */
+  
 
   .header { padding-block: 30px; }
 
 
 
-  /**
-   * SEARCH BAR
-   */
+ 
 
   .search-bar .input-field { --fs-1: 3.6rem; }
 
 
 
-  /**
-   * RECOMMENDED POST, FOOTER
-   */
-
+  
   .recommended .grid-list,
   .footer-top { grid-template-columns: repeat(3, 1fr); }
 
@@ -724,28 +698,19 @@
 
 
 
-/**
- * responsive for large than 768px screen
- */
+
 
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  
 
   :root {
 
-    /**
-     * typography
-     */
-
+   
     --fs-1: 7.2rem;
     --fs-2: 5.5rem;
 
-    /**
-     * radius
-     */
+ 
 
     --radius-16: 26px;
 
@@ -753,9 +718,7 @@
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  
 
   .section { margin-inline: 50px; }
 
@@ -773,9 +736,6 @@
 
 
 
-  /**
-   * SEARCH BAR
-   */
 
   .search-bar { padding: 25px; }
 
@@ -783,9 +743,6 @@
 
 
 
-  /**
-   * RECENT POST
-   */
 
   .top-author {
     display: block;
@@ -815,9 +772,7 @@
 
 
 
-  /**
-   * RECOMMENDED POST
-   */
+  
 
   .recommended .grid-list {
     grid-template-columns: repeat(4, 1fr);
@@ -826,9 +781,7 @@
 
 
 
-  /**
-   * FOOTER
-   */
+
 
   .footer-top { grid-template-columns: repeat(4, 1fr); }
 
@@ -842,27 +795,18 @@
 
 
 
-/**
- * responsive for large than 992px screen
- */
+
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+ 
   :root {
 
-    /**
-     * typography
-     */
+  
 
     --fs-1: 8.8rem;
     
-    /**
-     * spacing
-     */
+    
 
     --section-padding: 60px;
 
@@ -870,9 +814,7 @@
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  
 
   .section { margin-inline: 60px; }
 
@@ -903,9 +845,7 @@
 
 
 
-  /**
-   * HEADER
-   */
+
 
   .nav-toggle-btn { display: none; }
 
@@ -947,18 +887,13 @@
     gap: 8px;
   }
 
-  /**
-   * deatils
-   */
+  
 
   
 
 
 
 
-  /**
-   * HERO
-   */
 
   .hero { padding-block-start: 25px; }
 
@@ -979,25 +914,19 @@
 
 
 
-  /**
-   * RECENT POST
-   */
+  
 
   .top-author .avatar { width: 85px; }
 
 
 
-  /**
-   * RECOMMENDED POST
-   */
+  
 
   .recommended .grid-list { grid-template-columns: repeat(6, 1fr); }
 
 
 
-  /**
-   * NEWSLETTER
-   */
+  
 
   .newsletter {
     display: flex;
@@ -1013,21 +942,14 @@
 
 
 
-/**
- * responsive for large than 1200px screen
- */
+
 
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-1: 9.2rem;
     --fs-2: 6rem;
@@ -1038,9 +960,7 @@
 
 
 
-  /**
-   * REUSED STYLE
-   */
+ 
 
   .section { margin-inline: 70px; }
 
@@ -1060,19 +980,13 @@
 
 
 
-  /**
-   * HERO
-   */
-
+  
   .section.hero { padding-block: 50px 80px; }
 
   .hero-title { margin-block-end: 50px; }
 
 
 
-  /**
-   * RECENT POST
-   */
 
   .top-author .avatar { width: 100px; }
 
@@ -1080,9 +994,7 @@
 
 
 
-  /**
-   * FOOTER
-   */
+ 
 
   .footer-top { grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr 0.4fr; }
 
