@@ -131,9 +131,6 @@
   
   .section { margin-inline: 15px; }
   
-  .hover\:underline { text-underline-offset: 3px; }
-  
-  .hover\:underline:is(:hover, :focus) { text-decoration: underline; }
   
   .section:not(.header, .footer-bottom) {
     padding-block-end: var(--section-padding);
