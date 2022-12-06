@@ -108,6 +108,8 @@
     color: var(--eerie-black);
     font-size: 1.6rem;
     line-height: 1.5;
+    max-width: 1700px;
+    margin: 0 auto;
   }
   
   body.active { overflow: hidden; }

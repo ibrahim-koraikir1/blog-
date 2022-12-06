@@ -10,9 +10,9 @@ export default function Card({el }) {
     <div className="blog-card">
 
       <figure className="card-banner img-holder" >
-        <Image src={el.coverImage.url} 
+        <Image src={el.coverImage.url} width="550" height="660" loading="lazy"
 
-          alt="itself" className="img-cover"  layout='fill'/>
+          alt="itself" className="img-cover"  />
 
         <ul className="avatar-list absolute">
 
@@ -21,7 +21,7 @@ export default function Card({el }) {
           <li className="avatar-item">
             
             <a  href="#" className="avatar img-holder" >
-               <Image src={el.author.picture.url} width="100" height="100" loading="lazy" alt="Author"
+               <Image src={el.author.picture.url} width="100" height="100"  alt="Author"
                 className="img-cover" />
             </a>
           
