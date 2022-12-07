@@ -12,7 +12,7 @@ import { FacebookShareButton ,
 } from 'react-share'
 import Image from 'next/image';
 export default function PostDetails({post}) {
-  console.log( 'okkkkkk')
+  
   
   return (
     <div className=''>
@@ -41,7 +41,7 @@ export default function PostDetails({post}) {
       </div>
       <div className='post'>
        
-         <RichText content={post?.content.raw.children} />
+       {post?.content.raw.children && <RichText content={post?.content.raw.children} />}
         
       </div>
       
