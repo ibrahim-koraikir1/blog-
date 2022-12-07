@@ -12,7 +12,7 @@ import { FacebookShareButton ,
 } from 'react-share'
 import Image from 'next/image';
 export default function PostDetails({post}) {
- 
+  console.log(post, 'okkkkkk')
   
   return (
     <div className=''>
@@ -20,7 +20,7 @@ export default function PostDetails({post}) {
 
      
       <div className='title-details'>
-        {post.title}
+        {post?.title}
       </div>
       <div className='auhtor-details'>
         <p className='date'>
