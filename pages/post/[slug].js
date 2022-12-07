@@ -12,7 +12,7 @@ import { FacebookShareButton ,
 } from 'react-share'
 import Image from 'next/image';
 export default function PostDetails({post}) {
-  console.log(post, 'okkkkkk')
+  console.log( 'okkkkkk')
   
   return (
     <div className=''>
@@ -26,22 +26,22 @@ export default function PostDetails({post}) {
         <p className='date'>
           <span> Last Updated</span>
           
-          <span>{post.date}</span>
+          <span>{post?.date}</span>
           </p>
           <div className='avatar img-holder'>
-        <Image  src={post.coverImage.url} className="img-cover" width="100" height="100" loading="lazy" alt="Author"/>
+        <Image  src={post?.coverImage.url} className="img-cover" width="100" height="100" loading="lazy" alt="Author"/>
         </div>
         <p className='auhtor-name'>
 
         <span> Written By</span>
           
-          <span>{post.author.name}</span>
+          <span>{post?.author.name}</span>
          
         </p>
       </div>
       <div className='post'>
        
-         <RichText content={post.content.raw.children} />
+         <RichText content={post?.content.raw.children} />
         
       </div>
       
