@@ -23,7 +23,7 @@ export default function Header() {
 
 
       <Link href="/">
-        <Image src={logo} width='40' height='40' alt="Blogy logo" className="blog-logo"/>
+        <h2> dev.</h2>
         </Link>
 
       <nav className={active ? "navbar active" : "navbar"} >

@@ -110,6 +110,7 @@
     line-height: 1.5;
     max-width: 1700px;
     margin: 0 auto;
+
   }
   
   body.active { overflow: hidden; }
@@ -552,6 +553,9 @@
 }
 
 .recommended .blog-card { margin-block-end: 5px; }
+
+
+
 
 
 

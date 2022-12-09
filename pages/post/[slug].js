@@ -11,6 +11,7 @@ import { FacebookShareButton ,
   EmailIcon
 } from 'react-share'
 import Image from 'next/image';
+
 export default function PostDetails({post}) {
   
   
@@ -45,7 +46,7 @@ export default function PostDetails({post}) {
         
       </div>
       
-      
+     
        <div className='share'>
         < FacebookShareButton url={"cool"}>
         <FacebookIcon/>

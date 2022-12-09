@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import logo from '../public/asset/logo.jpg'
+
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer-brand">
 
           <a href="#" className="logo">
-            <Image src={logo} width="129" height="40" alt=" logo"  />
+             dev.
           </a>
 
           <p className="footer-text">
@@ -112,7 +112,7 @@ export default function Footer() {
       <div className="section footer-bottom">
 
         <p className="copyright">
-          &copy; blog 2022. Published by <a href="#" className="copyright-link hover:underline">ibrahim koraikir</a>.
+          &copy; blog 2022. Published by <a href="#" className="copyright-link hover:underline">ibrahim-koraikir</a>.
         </p>
 
       </div>
