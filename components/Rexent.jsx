@@ -18,15 +18,15 @@ export default function Rexent({post}) {
 
           </div>
           <ul className="grid-list scrool">
-          {post.map((el , i) => {
+          {post?.map((el , i) => {
             return (
               <div key={i}>
-              <Link href={`/post/${el.slug}`}> 
+              <Link href={`/post/${el?.slug}`}> 
                 <li>
                   <div className="blog-card">
     
                     <figure className="card-banner img-holder" >
-                      <Image src={el.coverImage.url}   width="550" height="660" loading="lazy"
+                      <Image src={el?.coverImage?.url}   width="550" height="660" loading="lazy"
                         alt="Creating is a privilege but it’s also a gift" className="img-cover" />
     
                       <ul className="avatar-list absolute">
@@ -35,7 +35,7 @@ export default function Rexent({post}) {
     
                         <li className="avatar-item">
                           <a href="#" className="avatar img-holder" >
-                            <Image src={el.author.picture.url}  width="100" height="100" loading="lazy" alt="Author"
+                            <Image src={el?.author?.picture?.url}  width="100" height="100" loading="lazy" alt="Author"
                               className="img-cover" />
                           </a>
                         </li>
@@ -49,7 +49,7 @@ export default function Rexent({post}) {
     
                         
     
-                       {el.tags.map((tag ,i) => {
+                       {el?.tags?.map((tag ,i) => {
                         return(
                          <li key={i}>
                           <a href="#" className="card-tag">{tag}</a>
@@ -61,12 +61,12 @@ export default function Rexent({post}) {
     
                       <h3 className="h4">
                         <a href="#" className="card-title hover:underline">
-                          {el.title}
+                          {el?.title}
                         </a>
                       </h3>
     
                       <p className="card-text">
-                      {el.excerpt}
+                      {el?.excerpt}
                       </p>
     
                     </div>

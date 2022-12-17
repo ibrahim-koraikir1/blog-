@@ -13,15 +13,15 @@ export default function Recommended({post}) {
 
           <ul className="grid-list">
 
-           {post.posts.map((el , i ) => {
+           {post?.posts?.map((el , i ) => {
             return(
               <div key={i}>
-              <Link href={`/post/${el.slug}`} >
+              <Link href={`/post/${el?.slug}`} >
                 <li>
                 <div className="blog-card">
   
                   <figure className="card-banner img-holder" style={{width: 200 ,height: 260}}>
-                    <Image src={el.coverImage.url} width="300" height="360" loading="lazy"
+                    <Image src={el?.coverImage?.url} width="300" height="360" loading="lazy"
                       alt="done" className="img-cover" layout='fill' />
   
                     
@@ -31,7 +31,7 @@ export default function Recommended({post}) {
   
                     <h3 className="h5">
                       <a href="#" className="card-title hover:underline">
-                         {el.title}
+                         {el?.title}
                       </a>
                     </h3>
   

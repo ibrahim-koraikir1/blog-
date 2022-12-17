@@ -14,7 +14,7 @@ export default function Cards({post}) {
       <ul className="has-scrollbar">
 
 
-        {post.posts.map((el , i) =>{
+        {post?.posts?.map((el , i) =>{
             return (<Card el={el} key={i} />)
         })}
 
