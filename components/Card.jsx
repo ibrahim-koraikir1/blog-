@@ -49,7 +49,6 @@ export default function Card({el }) {
            {el?.title}
           </a>
         </h3>
-
         <p className="card-text">
          {el?.excerpt}
         </p>

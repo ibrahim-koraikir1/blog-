@@ -15,9 +15,7 @@ export default function Footer() {
              dev.
           </a>
 
-          <p className="footer-text">
-            A minimal, functional theme for running a paid-membership publication on Ghost.
-          </p>
+         
 
         </div>
 
